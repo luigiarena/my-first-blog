@@ -2,7 +2,6 @@
 
 {% block content %}
     <div class="list-post col-sm-12 col-md-11">
-      <div class="row row-eq-height">
     {% for post in posts %}
       <a href="{% url 'post_detail' pk=post.pk %}">
         <div class="post col-sm-12 col-sm-offset-0 col-md-5 col-md-offset-1">
@@ -14,6 +13,5 @@
         </div>
       </a>
     {% endfor %}
-      </div>
     </div>
 {% endblock content %}
